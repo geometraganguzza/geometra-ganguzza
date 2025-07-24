@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -77,6 +78,21 @@
       text-align: center;
       padding: 15px;
     }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      padding: 10px 20px;
+      background-color: #1e2d24;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
     @media (max-width: 600px) {
       header {
         flex-direction: column;
@@ -127,12 +143,12 @@
   <section id="servizi">
     <h2>Servizi</h2>
     <ul>
-      <li>Progettazione su misura di interventi edilizi</li>
-      <li>Studio preliminare e analisi tecnica</li>
-      <li>Pratiche catastali</li>
-      <li>Consulenze tecniche su interventi e compravendite</li>
-      <li>Direzione lavori</li>
-      <li>Gestione delle pratiche comunali</li>
+      <li><strong>Progettazione edilizia personalizzata:</strong> realizzo progetti su misura per nuove costruzioni e ristrutturazioni, curando ogni dettaglio tecnico ed estetico.</li>
+      <li><strong>Studi preliminari di fattibilità:</strong> valuto insieme al cliente la possibilità di realizzazione dell'intervento, analizzando vincoli, costi e benefici.</li>
+      <li><strong>Gestione pratiche catastali:</strong> mi occupo della redazione e aggiornamento di visure, volture, frazionamenti, accatastamenti e variazioni catastali.</li>
+      <li><strong>Consulenze immobiliari:</strong> offro supporto tecnico durante l'acquisto o la vendita di immobili, analizzando conformità edilizia, catastale e urbanistica.</li>
+      <li><strong>Direzione lavori:</strong> coordino le attività in cantiere assicurando il rispetto dei tempi, dei costi e delle normative di sicurezza.</li>
+      <li><strong>Pratiche edilizie e autorizzazioni comunali:</strong> redigo e presento le necessarie pratiche amministrative presso gli enti competenti (CILA, SCIA, Permessi di costruire).</li>
     </ul>
   </section>
 
@@ -144,6 +160,16 @@
       <p><strong>Indirizzo:</strong> Via S. Antonio 2, Castano Primo</p>
       <p><strong>Orari di reperibilità:</strong> Lunedì - Sabato, 8:30 - 19:30</p>
     </div>
+
+    <h3>Scrivimi un messaggio</h3>
+    <form action="https://formsubmit.co/gangu.l@libero.it" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="nome" placeholder="Il tuo nome" required>
+      <input type="email" name="email" placeholder="La tua email" required>
+      <input type="text" name="telefono" placeholder="Il tuo telefono (opzionale)">
+      <textarea name="messaggio" placeholder="Scrivi qui il tuo messaggio" rows="5" required></textarea>
+      <button type="submit">Invia</button>
+    </form>
   </section>
 
   <footer>
